@@ -67,8 +67,15 @@ ul li {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    box-shadow: 3px 3px 0px black;
+    transition: linear 0.2s;
 }
 
 ul li:hover {
     text-decoration: underline;
+}
+
+.icons:hover {
+    box-shadow: none;
+
 }
