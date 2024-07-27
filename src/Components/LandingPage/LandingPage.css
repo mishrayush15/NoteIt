@@ -1,0 +1,13 @@
+
+
+.landingpage {
+    height: 100vh;
+    width: 90%;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    margin: 30px auto;
+    overflow-x: hidden;
+
+}
