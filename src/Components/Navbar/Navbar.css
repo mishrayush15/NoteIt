@@ -71,11 +71,14 @@ ul li {
     transition: linear 0.2s;
 }
 
-ul li:hover {
-    text-decoration: underline;
-}
 
 .icons:hover {
     box-shadow: none;
 
+}
+
+.active {
+    text-decoration: underline #C1F11D 5px;
+    text-underline-position:below;
+    
 }
