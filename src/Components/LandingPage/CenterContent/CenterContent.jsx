@@ -13,7 +13,7 @@ const CenterContent = () => {
 
         </div>
         <div className="right_part">
-            <img src={"./src/assets/side_image.png"} alt="" />
+            <img src={"./src/assets/right_image.png"} alt="" />
 
         </div>
 

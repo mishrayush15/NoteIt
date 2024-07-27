@@ -3,9 +3,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
+    /* position: relative; */
     height: 100%;
     width: 90%;
+    margin: 0;
 
 
 
@@ -15,6 +16,7 @@
     height: 100%;
     width: 50%;
     line-height: 1.3;
+    /* position: relative; */
     
 }
 
@@ -39,15 +41,19 @@
 
 .right_part {
     height: 100%;
-    width: 50%;
+    width: 30%;
+    /* background-color: #fff; */
+    
     
 
 
 }
 
 .right_part img{
-    width: 170%;
-
+    /* position: absolute; */
+    width: 120%;
+    right: -50;
+    top: -50%;
 }
 
 .left_part button {
