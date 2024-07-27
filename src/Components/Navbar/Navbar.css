@@ -58,6 +58,7 @@ ul li {
 
 .side_menu .icons {
     background-color: #C1F11D;
+    border: 2.5px solid black;
     font-size: 21px;
     height: 30px;
     width: 30px;
