@@ -2,11 +2,12 @@
 .center_content{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
     /* position: relative; */
     height: 100%;
     width: 90%;
-    margin: 0;
+    margin-top: 50px;
+    margin-bottom: 7.5rem;
 
 
 
@@ -41,19 +42,25 @@
 
 .right_part {
     height: 100%;
-    width: 30%;
-    /* background-color: #fff; */
-    
-    
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+    margin-left: 1rem;
+}
 
+.right_part .image{
+    display: flex;
+    justify-content: end;
+    align-items: center;
 
 }
 
-.right_part img{
-    /* position: absolute; */
-    width: 120%;
-    right: -50;
-    top: -50%;
+.image img{
+    margin: 0 auto;
+    width: 100%; 
+    background-color: yellow;   
+    
 }
 
 .left_part button {
