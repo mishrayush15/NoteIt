@@ -1,0 +1,81 @@
+
+
+.main_container_bottom {
+    width: 90%;
+    height: 100%;
+    /* background-color: yellow; */
+    margin: 0 auto;
+    padding: 3rem 0;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.upload_section_box {
+    height: 70%;
+    width: 60%;
+    background-color: #C1F11D;
+    border: 5px solid black;
+    border-radius: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 5px 5px 0px black;
+    transition: linear 0.2s;
+}
+
+.upload_section_box:hover  {
+    box-shadow: none;
+}
+
+.upload_section_box i{
+    font-size: 70px;
+    cursor: pointer;
+}
+
+.upload_section_box h3 {
+    font-size: 39px;
+    font-weight: 600;
+}
+.upload_section_box p{
+    font-size: 21px;
+}
+
+
+
+.options_bottom {
+    height: 30%;
+    padding: 3rem 0;
+    display: flex;
+    gap: 1.6rem;
+}
+
+button {
+    height: 45px;
+    width: 190px;
+    display: flex;
+    padding: 1rem;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+    border-radius: 9px;
+    background-color: #C1F11D;
+    font-size: 16px;
+    font-weight: 500;
+    box-shadow: 3px 3px 0px black;
+    transition: linear 0.2s;
+    cursor: pointer;
+}
+
+button i {
+    font-size: 18px;
+}
+
+button:hover {
+    box-shadow: none;
+    background-color: #F5F5EE;
+}
+

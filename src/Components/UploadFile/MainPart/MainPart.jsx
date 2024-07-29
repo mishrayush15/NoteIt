@@ -4,7 +4,7 @@ import UploadFile from '../UploadFile'
 
 const MainPart = () => {
   return (
-    <div>
+    <div className='main_content_holder'>
         <UploadFile/>
     </div>
   )
