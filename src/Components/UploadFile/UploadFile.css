@@ -26,6 +26,8 @@
     transition: linear 0.2s;
 }
 
+
+
 .upload_section_box:hover  {
     box-shadow: none;
 }
