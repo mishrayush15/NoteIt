@@ -101,14 +101,22 @@ const UploadFile = () => {
             <i class="fa-solid fa-arrow-up-from-bracket"></i>
             <p onClick={handleGemini}>Upload Again</p>
           </button>
-          <button disabled={loading} className="single_option">
-            <i class="fa-solid fa-arrow-up-from-bracket"></i>
+          <div className="file-input-wrapper">
             <input
               type="file"
               accept="application/pdf"
               onChange={pdfExtract}
+              id="file-input"
+              style={{ display: 'none' }}
             />
-          </button>
+            <button
+              disabled={loading}
+              className="single_option"
+              onClick={() => document.getElementById('file-input').click()}
+            >
+              <i className="fa-solid fa-arrow-up-from-bracket"></i> Choose PDF File
+            </button>
+          </div>
           <button disabled={loading} className="single_option">
             <i class="fa-solid fa-down-long"></i>
             <p onClick={handleDownloadWord}>Download</p>

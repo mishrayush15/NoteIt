@@ -1,5 +1,3 @@
-
-
 .main_container_bottom {
     width: 90%;
     height: 100%;
@@ -28,11 +26,11 @@
 
 
 
-.upload_section_box:hover  {
+.upload_section_box:hover {
     box-shadow: none;
 }
 
-.upload_section_box i{
+.upload_section_box i {
     font-size: 70px;
     cursor: pointer;
 }
@@ -41,7 +39,8 @@
     font-size: 39px;
     font-weight: 600;
 }
-.upload_section_box p{
+
+.upload_section_box p {
     font-size: 21px;
 }
 
@@ -81,3 +80,29 @@ button:hover {
     background-color: #F5F5EE;
 }
 
+/* Style the custom button */
+.single_option {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+}
+
+.single_option:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.single_option:hover:not(:disabled) {
+    background-color: #0056b3;
+}
+
+.file-input-wrapper {
+    position: relative;
+    display: inline-block;
+}
