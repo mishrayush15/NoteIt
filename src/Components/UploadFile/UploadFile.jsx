@@ -84,23 +84,24 @@ const UploadFile = () => {
         {screen ? (
           <div className="upload_section_box">
             <div className="content_box">
-              <p className="result-data">Here's your Summary</p>
+              <p className="text_top"><b>Here's your Summary -</b></p>
+              <br />
               <p dangerouslySetInnerHTML={{ __html: result }}></p>
             </div>
           </div>
         ) : (
-          <div className="upload_section_box">
-            <i className="fa-solid fa-arrow-up-from-bracket"></i>
+          <div className="upload_section_box ">
+            <i className="fa-solid fa-arrow-up-from-bracket box_icon"></i>
             <input type="file" accept="application/pdf" onChange={pdfExtract} />
             <h3>Upload your file here</h3>
-            <p>(Drag & Drop)</p>
+            <p className="p_tag_drag">(Drag & Drop)</p>
             <p className="result-data"></p>
           </div>
         )}
         {loading ? <Loader /> : null}
         {screen ? (
           <div className="options_bottom">
-            <button disabled={loading} className="single_option">
+            <button disabled={loading} className="single_option ">
               <i class="fa-solid fa-arrow-up-from-bracket"></i>
               <p onClick={handleGemini}> Submit</p>
             </button>

@@ -1,7 +1,36 @@
 import React, { useState } from "react";
 import './Navbar.css'
+import { useGSAP } from "@gsap/react";
+import gsap from 'gsap';
+import { useRef } from 'react';
 
 const Navbar = () => {
+  
+  const tl = gsap.timeline();
+
+  useGSAP( () => {
+    tl.from(".logo", {
+      opacity: 0,
+      delay: 0.5,
+      duration:0.5,
+      y: 30
+    })
+
+    tl.from("li", {
+      y: -30,
+      delay: 0.5,
+      duration: 0.7,
+      stagger: 0.2,
+      opacity: 0
+    })
+
+    tl.from(".side_menu", {
+      opacity: 0,
+      delay: 0,
+      duration:0.5,
+      y: 30
+    })
+  })
 
   const [isSelected, setIsSelected] = useState("");
 
@@ -22,9 +51,7 @@ const Navbar = () => {
           <div className="icons">
             <i className="fa-solid fa-moon"></i>
           </div>
-          <div className="icons">
-            <i className="fa-solid fa-bars"></i>
-          </div>
+        
         </div>
       </div>
     </div>

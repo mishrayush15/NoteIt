@@ -4,7 +4,7 @@
     width: 90%;
     height: 100%;
     /* background-color: yellow; */
-    margin: 0 auto;
+    margin: 0px auto;
     padding: 3rem 0;
     display: flex;
     justify-content: start;
@@ -25,6 +25,7 @@
     box-shadow: 4.5px 4.5px 0px black;
     transition: linear 0.2s;
     padding: 20px; 
+    margin-bottom: 30px;
 }
 
 
@@ -45,19 +46,34 @@
     font-size: 21px;
 }
 
+
+.box_icon {
+    padding-bottom: 30px;
+}
+
+.p_tag_drag {
+    font-weight: 600;
+}
+
+
 .content_box {
     height: auto; 
     width: 100%;
     display: flex;
     justify-content: flex-start; 
     align-items: flex-start; 
-    border: 1px solid black;
+    /* border: 1px solid black; */
     flex-direction: column;
     text-align: left;
     overflow-y: auto; 
-    padding: 20px; 
+    padding: 30px; 
     margin: 30px auto;
     box-sizing: border-box;
+}
+
+.content_box .text_top {
+    text-decoration: underline;
+    font-size: 25px;
 }
 
 
@@ -97,6 +113,8 @@ button:hover {
 
 
 .single_option {
+    height: 45px;
+    width: 170px;
     display: flex;
     padding: 1rem;
     gap: 1rem;

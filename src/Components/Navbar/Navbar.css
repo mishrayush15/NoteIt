@@ -55,6 +55,7 @@ ul li {
     display: flex;
     gap: 1rem;
     justify-content: end;
+
 }
 
 .side_menu .icons {
@@ -82,5 +83,7 @@ ul li {
 .active {
     text-decoration: underline #C1F11D 5px;
     text-underline-position:below;
+    transition: linear 0.2s;
+
     
 }

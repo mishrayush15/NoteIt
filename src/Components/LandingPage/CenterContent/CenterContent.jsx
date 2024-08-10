@@ -1,36 +1,98 @@
-import React from 'react'
-import './CenterContent.css'
+import React from "react";
+import "./CenterContent.css";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { useRef } from "react";
 
 const CenterContent = () => {
-    return (
-        <>
-            <div className='center_content'>
-                <div className="left_part">
-                    <h3>Elevate your <span>success</span></h3>
-                    <h3>Get <span>faster</span> insights</h3>
-                    <p>Convert all your PDF'S into quick revisable summary to save your time </p>
-                    <button>Get Started</button>
 
-                </div>
-                <div className="right_part">
-                    <div className="image">
-                        <img src={"./src/assets/right_image.png"} alt="" />
-                    </div>
+  const tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".center_content",
+      scroller: "body", 
+      markers: true,
+      // start: "top 50%",
+      // end: "top -30%",
+      scrub: 2
+  }
+  });
 
-                </div>
+  useGSAP(() => {
+    tl.from(".left_part p, .left_part h3", {
+      opacity: 0,
+      delay: 1.5,
+      duration: 0.7,
+      x: -100,
+      stagger: 0.3,
+    }, "sathme");
 
-            </div>
-            <div className="text">
-                <div className="headings">
-
-                    <h3>Get your work done below</h3>
-                    <h3>Upload the <span>PDF</span> and see the <span>Magic</span> happen</h3>
-                </div>
-            </div>
-        </>
+    gsap.from("button", {
+      opacity: 1,
+      delay: 2,
+      duration: 0.5
+    })
 
 
-    )
-}
+    tl.from(".right_part",{
+        opacity: 0,
+        delay: 1.5,
+        duration: 0.7,
+        x: 100,
+      },"sathme"
+    );
 
-export default CenterContent
+    tl.from(".headings .line_one" , {
+      opacity: 0,
+      x:-300,
+      delya: 2,
+      duration: 0.5
+    })
+
+    tl.from(".headings .line_two" , {
+      opacity: 0,
+      x: 300,
+      delya: 2,
+      duration: 0.5,
+      stagger: 0.3
+    })
+  });
+
+  return (
+    <>
+      <div className="center_content">
+        <div className="left_part">
+          <h3>
+            Elevate your <span>success</span>
+          </h3>
+          <h3>
+            Get <span>faster</span> insights
+          </h3>
+          <p>
+            Convert all your PDF'S into quick revisable summary to save your
+            time
+          </p>
+          <div className="btn">
+
+          <button>Get Started</button>
+          </div>
+        </div>
+        <div className="right_part">
+          <div className="image">
+            <img src={"./src/assets/right_image.png"} alt="" />
+          </div>
+        </div>
+      </div>
+      <div className="text">
+        <div className="headings">
+          <h3 className="line_one">Get your work done below</h3>
+          <h3 className="line_two">
+            Upload the <span>PDF</span> and see the <span>Magic</span> happen
+          </h3>
+        </div>
+      </div>
+      
+    </>
+  );
+};
+
+export default CenterContent;
