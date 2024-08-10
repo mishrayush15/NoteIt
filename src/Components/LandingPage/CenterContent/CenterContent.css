@@ -100,3 +100,17 @@
     font-size: 29px;
     color: #bbed15;
 }
+
+.left_part button {
+    background-color: #C1F11D;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    height: 54px;
+    box-shadow: 3px 3px 0px black;
+    transition: linear 0.2s;
+}
+
+.left_part button:hover {
+    box-shadow: none;
+}
