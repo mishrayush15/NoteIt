@@ -6,16 +6,7 @@ import { useRef } from "react";
 
 const CenterContent = () => {
 
-  const tl = gsap.timeline({
-    scrollTrigger: {
-      trigger: ".center_content",
-      scroller: "body", 
-      markers: true,
-      // start: "top 50%",
-      // end: "top -30%",
-      scrub: 2
-  }
-  });
+  const tl = gsap.timeline();
 
   useGSAP(() => {
     tl.from(".left_part p, .left_part h3", {

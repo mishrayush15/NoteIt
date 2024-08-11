@@ -65,11 +65,13 @@
     /* border: 1px solid black; */
     flex-direction: column;
     text-align: left;
-    overflow-y: auto; 
+    overflow-y: scroll; 
     padding: 30px; 
     margin: 30px auto;
     box-sizing: border-box;
 }
+
+
 
 .content_box .text_top {
     text-decoration: underline;
@@ -114,7 +116,7 @@ button:hover {
 
 .single_option {
     height: 45px;
-    width: 170px;
+    width: 190px;
     display: flex;
     padding: 1rem;
     gap: 1rem;

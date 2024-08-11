@@ -4,7 +4,13 @@ import { useGSAP } from "@gsap/react";
 import gsap from 'gsap';
 import { useRef } from 'react';
 
-const Navbar = () => {
+const Navbar = ( {theme , setTheme}) => {
+
+  const[isSelected, setIsSelected] = useState("");
+
+  const toggleTheme = () => {
+    setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light" ))
+  }
   
   const tl = gsap.timeline();
 
@@ -32,7 +38,6 @@ const Navbar = () => {
     })
   })
 
-  const [isSelected, setIsSelected] = useState("");
 
   return (
     <div className="nav_container">
@@ -48,8 +53,8 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="side_menu">
-          <div className="icons">
-            <i className="fa-solid fa-moon"></i>
+          <div className="icons" onClick={toggleTheme}>
+            <i className={`fa-solid ${ theme === "light" ? "fa-moon" : "fa-sun"}` } ></i>
           </div>
         
         </div>
