@@ -13,7 +13,133 @@ body {
 
 }
 
-::-webkit-scrollbar {
-    display: none;
+.main_app_container.dark ::-webkit-scrollbar-track{
+    color: black;
 }
+
+.main_app_container.light {
+    background-color: #f5f5ee;
+
+}
+
+.main_app_container.dark .nav_container{
+    background-color: black;
+    color: #C1F11D;
+
+}
+
+.main_app_container.dark i {
+    color: black;
+}
+
+.main_app_container.dark .landingpage {
+    background-color: black;
+}
+
+.main_app_container.dark h3 {
+    color: #f5f5ee;
+}
+
+.main_app_container.dark button {
+    border: 3px solid #C1F11D;
+    background-color: black;
+    color: #C1F11D;
+    transition: linear 0.35s
+}
+
+.main_app_container.dark button:hover {
+    border: 3px solid black;
+    background-color: #C1F11D;
+    color: black;
+}
+
+.main_app_container.dark .main_content_holder {
+    background-color: black;
+}
+
+.main_app_container.dark .main_container_bottom i{
+    color: #C1F11D;
+    transition: linear 0.35s
+
+}
+
+.main_app_container.dark .main_container_bottom i:hover{
+    color: black;
+}
+
+.main_app_container.dark .btn_submit:hover {
+    color: black;
+}
+
+.main_app_container.dark .upload_section_box {
+    background-color: black;
+    border: 3px solid #C1F11D;
+    box-shadow: 4.5px 4.5px 0px #C1F11D;
+    transition: linear 0.3s;
+}
+
+.main_app_container.dark .upload_section_box:hover  {
+    box-shadow: none;
+}
+
+.main_app_container.dark .single_option:hover i {
+    color: black;
+}
+
+
+.main_app_container.light .upload_section_box h3,
+.main_app_container.light .upload_section_box h2,
+.main_app_container.light .upload_section_box h4,
+.main_app_container.light .upload_section_box h5 {
+    color: black;
+}
+
+
+.main_app_container.dark .upload_section_box h3,
+.main_app_container.dark .upload_section_box h2,
+.main_app_container.dark .upload_section_box h4,
+.main_app_container.dark .upload_section_box h5 {
+    color: #C1F11D;
+}
+
+::-webkit-scrollbar {
+    width: 9px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f5f5ee;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #C1F11D;
+    border-radius: 5px;
+}
+
+.main_app_container.dark ::-webkit-scrollbar-track {
+    background-color: black !important; 
+}
+
+.main_app_container.dark ::-webkit-scrollbar-thumb {
+    background-color: #C1F11D !important; 
+    border-radius: 5px;
+}
+
+.main_app_container.dark .app-footer {
+    background-color: #C1F11D;
+}
+
+.main_app_container.dark .app-footer p, .app-footer a {
+    color: black;
+}
+
+
+
+/* .main_app_container.light .upload_section_box h3, h2, h4, h5 {
+    color: black;
+}
+
+.main_app_container.dark .upload_section_box h3, h2, h4, h5 {
+    color: #C1F11D;
+} */
+
 

@@ -1,0 +1,26 @@
+
+
+.app-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    background-color: black;
+    margin: 0;
+}
+
+.footer-links {
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 35px 0px;
+
+}
+
+.app-footer a, .app-footer p{
+    color: #C1F11D;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
