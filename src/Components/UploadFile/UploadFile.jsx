@@ -1,11 +1,36 @@
+<<<<<<< HEAD
 import React, { useState, useEffect} from "react";
+=======
+import React, { useState, useEffect, useRef } from "react";
+>>>>>>> feature/autoscroll
 import { run } from "../Gemini/Gemini";
 import pdfToText from "react-pdftotext";
 import { Document, Packer, Paragraph, TextRun } from "docx";
 import Loader from "./Loader/Loader";
 import "./UploadFile.css";
 
+<<<<<<< HEAD
 const UploadFile =() => {
+=======
+const UploadFile = () => {
+  const uploadFileRef = useRef(null);
+
+  // Auto scroll view
+  useEffect(() => {
+    const handleScrollToUploadSection = () => {
+      if (uploadFileRef.current) {
+        uploadFileRef.current.scrollIntoView({ behavior: "smooth" });
+      }
+    };
+
+    window.addEventListener("scrollToUploadSection", handleScrollToUploadSection);
+
+    return () => {
+      window.removeEventListener("scrollToUploadSection", handleScrollToUploadSection);
+    };
+  }, []);
+
+>>>>>>> feature/autoscroll
   const [result, setResult] = useState("");
   const [loading, setLoading] = useState(false);
   const [screen, setScreen] = useState(false);
@@ -80,7 +105,11 @@ const UploadFile =() => {
 
   return (
     <>
+<<<<<<< HEAD
       <div  className="main_container_bottom">
+=======
+      <div ref={uploadFileRef} className="main_container_bottom">
+>>>>>>> feature/autoscroll
         {screen ? (
           <div className="upload_section_box">
             <div className="content_box">

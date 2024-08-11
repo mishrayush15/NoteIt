@@ -2,13 +2,21 @@ import React from "react";
 import "./CenterContent.css";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import { useRef } from "react";
 
 const CenterContent = () => {
+  const scrollToUploadSection = () => {
+    const event = new CustomEvent("scrollToUploadSection");
+    window.dispatchEvent(event);
+  };
 
-  const tl = gsap.timeline();
-
-  const uploadSectionRef = useRef(null);
+  const tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".center_content",
+      scroller: "body", 
+      markers: true,
+      scrub: 2
+    }
+  });
 
   useGSAP(() => {
     tl.from(".left_part p, .left_part h3", {
@@ -25,29 +33,28 @@ const CenterContent = () => {
       duration: 0.5
     })
 
-
-    tl.from(".right_part",{
+    tl.from(".right_part", {
         opacity: 0,
         delay: 1.5,
         duration: 0.7,
         x: 100,
-      },"sathme"
+      }, "sathme"
     );
 
-    tl.from(".headings .line_one" , {
+    tl.from(".headings .line_one", {
       opacity: 0,
-      x:-300,
-      delya: 2,
+      x: -300,
+      delay: 2,
       duration: 0.5
-    })
+    });
 
-    tl.from(".headings .line_two" , {
+    tl.from(".headings .line_two", {
       opacity: 0,
       x: 300,
-      delya: 2,
+      delay: 2,
       duration: 0.5,
       stagger: 0.3
-    })
+    });
   });
 
   
@@ -67,8 +74,7 @@ const CenterContent = () => {
             time
           </p>
           <div className="btn">
-
-          <button >Get Started</button>
+            <button onClick={scrollToUploadSection}>Get Started</button>
           </div>
         </div>
         <div className="right_part">
@@ -85,8 +91,6 @@ const CenterContent = () => {
           </h3>
         </div>
       </div>
-      
-      
     </>
   );
 };
