@@ -4,7 +4,6 @@
     padding: 0;
     margin: 0;
     font-family: poppins;
-    cursor: none;
     z-index: 1000;
     
 }
@@ -38,6 +37,10 @@ body {
 .main_app_container.light {
     background-color: #f5f5ee;
 
+}
+
+.main_app_container.dark .nav_container a {
+    color: #C1F11D;
 }
 
 .main_app_container.dark .nav_container{

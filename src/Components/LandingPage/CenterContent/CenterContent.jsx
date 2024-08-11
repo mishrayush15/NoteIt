@@ -4,6 +4,8 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
 const CenterContent = () => {
+  
+
   const scrollToUploadSection = () => {
     const event = new CustomEvent("scrollToUploadSection");
     window.dispatchEvent(event);

@@ -43,13 +43,25 @@ ul {
     gap: 2.5rem;
 }
 
-
 ul li {
     list-style: none;
+}
+
+
+.options a {
+    color: black;
+    text-decoration: none;
     font-size: 18px;
     font-weight: 600;
     cursor: pointer;
+    transition: linear 0.3s;
 }
+
+.options a:hover {
+    scale: 1.02;
+}
+
+
 
 .nav_contents .side_menu {
     width: 20%;
@@ -81,10 +93,10 @@ ul li {
 
 }
 
-.active {
-    text-decoration: underline #C1F11D 5px;
-    text-underline-position:below;
+.options a.active {
+    /* text-decoration: underline #C1F11D 5px;
+    text-underline-position:below; */
     transition: linear 0.2s;
-
+    color: #C1F11D;
     
 }
