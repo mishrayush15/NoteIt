@@ -1,5 +1,3 @@
-
-
 .main_container_bottom {
     width: 90%;
     height: 100%;
@@ -33,7 +31,7 @@
     box-shadow: none;
 }
 
-.upload_section_box i{
+.upload_section_box i {
     font-size: 70px;
     cursor: pointer;
 }
@@ -42,7 +40,8 @@
     font-size: 39px;
     font-weight: 600;
 }
-.upload_section_box p{
+
+.upload_section_box p {
     font-size: 21px;
 }
 

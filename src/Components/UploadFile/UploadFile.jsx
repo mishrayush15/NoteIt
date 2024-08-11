@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect} from "react";
 import { run } from "../Gemini/Gemini";
 import pdfToText from "react-pdftotext";
 import { Document, Packer, Paragraph, TextRun } from "docx";
 import Loader from "./Loader/Loader";
 import "./UploadFile.css";
 
-const UploadFile = () => {
+const UploadFile =() => {
   const [result, setResult] = useState("");
   const [loading, setLoading] = useState(false);
   const [screen, setScreen] = useState(false);
@@ -80,7 +80,7 @@ const UploadFile = () => {
 
   return (
     <>
-      <div className="main_container_bottom">
+      <div  className="main_container_bottom">
         {screen ? (
           <div className="upload_section_box">
             <div className="content_box">

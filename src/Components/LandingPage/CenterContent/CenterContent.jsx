@@ -8,6 +8,8 @@ const CenterContent = () => {
 
   const tl = gsap.timeline();
 
+  const uploadSectionRef = useRef(null);
+
   useGSAP(() => {
     tl.from(".left_part p, .left_part h3", {
       opacity: 0,
@@ -48,6 +50,8 @@ const CenterContent = () => {
     })
   });
 
+  
+
   return (
     <>
       <div className="center_content">
@@ -64,7 +68,7 @@ const CenterContent = () => {
           </p>
           <div className="btn">
 
-          <button>Get Started</button>
+          <button >Get Started</button>
           </div>
         </div>
         <div className="right_part">
@@ -81,6 +85,7 @@ const CenterContent = () => {
           </h3>
         </div>
       </div>
+      
       
     </>
   );
