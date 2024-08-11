@@ -4,7 +4,25 @@
     padding: 0;
     margin: 0;
     font-family: poppins;
+    cursor: none;
+    z-index: 1000;
     
+}
+
+/* .pointer {
+    background-color: black;
+} */
+
+.main_app_container.light .pointer {
+    background-color: #f5f5ee;
+}
+
+.cursor {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #C1F11D;
+    position: fixed;
 }
 
 body {

@@ -9,6 +9,7 @@
     align-items: center; */
     padding: 15px 20px;
     position: sticky;
+    z-index: 1;
 }
 
 .nav_contents {
