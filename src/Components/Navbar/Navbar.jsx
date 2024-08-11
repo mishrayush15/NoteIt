@@ -3,6 +3,7 @@ import './Navbar.css'
 import { useGSAP } from "@gsap/react";
 import gsap from 'gsap';
 import { useRef } from 'react';
+import { Link } from "react-router-dom";
 
 const Navbar = ( {theme , setTheme}) => {
 
@@ -47,9 +48,9 @@ const Navbar = ( {theme , setTheme}) => {
         </div>
         <div className="options">
           <ul>
-            <li onClick={() => setIsSelected("home")} className = {isSelected === "home" ? "active" : " "}>Home</li>
-            <li onClick={() => setIsSelected("community")} className = {isSelected === "community" ? "active" : " "}>Community</li>
-            <li onClick={() => setIsSelected("room")} className = {isSelected === "room" ? "active" : " "}>Room</li>
+            <Link to="/" onClick={() => setIsSelected("home")} className = {isSelected === "home" ? "active" : " "}>Home</Link>
+            <Link to="/room" onClick={() => setIsSelected("room")} className = {isSelected === "room" ? "active" : " "}>Room</Link>
+            <Link to="/community" onClick={() => setIsSelected("community")} className = {isSelected === "community" ? "active" : " "}>Community</Link>
           </ul>
         </div>
         <div className="side_menu">
