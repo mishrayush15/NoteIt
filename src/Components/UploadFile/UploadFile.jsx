@@ -109,9 +109,9 @@ const UploadFile = () => {
         ) : (
           <div className="upload_section_box ">
             <i className="fa-solid fa-arrow-up-from-bracket box_icon"></i>
-            <input type="file" accept="application/pdf" onChange={pdfExtract} />
             <h3>Upload your file here</h3>
             <h2 className="p_tag_drag">(Drag & Drop)</h2>
+            <input type="file" accept="application/pdf" onChange={pdfExtract} />
             <p className="result-data"></p>
           </div>
         )}
@@ -119,7 +119,8 @@ const UploadFile = () => {
         {screen ? (
           <div className="options_bottom">
             <button disabled={loading} className="single_option ">
-              <i class="fa-solid fa-arrow-up-from-bracket btn_submit"></i>
+              {/* <i class="fa-solid fa-arrow-up-from-bracket btn_submit"></i> */}
+              <i className="fa-solid fa-check btn_submit"></i>
               <p className="btn_submit" onClick={handleGemini}> Submit</p>
             </button>
             <div className="file-input-wrapper">
@@ -146,7 +147,7 @@ const UploadFile = () => {
           </div>
         ) : (
           <button className="single_option">
-            <i class="fa-solid fa-down-long"></i>
+            <i class="fa-solid fa-check"></i>
             <p disabled={loading} onClick={handleGemini}>
               Submit
             </p>
