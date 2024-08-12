@@ -1,9 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './RoomPage.css'
+import Navbar from '../Navbar/Navbar'
 
 const RoomPage = () => {
+
+
     return (
-        <div>
+        <>
+            <Navbar/>
+        <div className='gear_main'>
             <div class="gearbox">
                 <div class="overlay"></div>
                 <div class="gear one">
@@ -38,7 +43,12 @@ const RoomPage = () => {
                     </div>
                 </div>
             </div>
+            <br />
+
+            <h2>Coming Soon ...</h2>
+            <h1>Work in Progress</h1>
         </div>
+    </>
     )
 }
 
