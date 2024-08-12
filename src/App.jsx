@@ -15,7 +15,7 @@ const App = () => {
     gsap.to(".cursor", {
       x: e.clientX,
       y: e.clientY,
-      duration: 0.3,
+      duration: 0.7,
       ease: 'power3.out'
     });
   };

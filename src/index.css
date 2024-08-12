@@ -17,8 +17,8 @@
 }
 
 .cursor {
-    height: 15px;
-    width: 15px;
+    height: 30px;
+    width: 30px;
     border-radius: 50%;
     background-color: #C1F11D;
     position: fixed;
