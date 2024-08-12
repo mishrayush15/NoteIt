@@ -111,7 +111,7 @@ body {
 .main_app_container.light .upload_section_box h3,
 .main_app_container.light .upload_section_box h2,
 .main_app_container.light .upload_section_box h4,
-.main_app_container.light .upload_section_box h5 {
+.main_app_container.light .upload_section_box h5{
     color: black;
 }
 
@@ -119,7 +119,8 @@ body {
 .main_app_container.dark .upload_section_box h3,
 .main_app_container.dark .upload_section_box h2,
 .main_app_container.dark .upload_section_box h4,
-.main_app_container.dark .upload_section_box h5 {
+.main_app_container.dark .upload_section_box h5,
+.main_app_container.dark .left_part p {
     color: #C1F11D;
 }
 
